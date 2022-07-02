@@ -1,6 +1,7 @@
 #!/bin/sh
 export LANG=zh_CN.UTF-8
 
+echo `date`
 echo '**********************************START************************************************'
 cd /opt/opensource/studyspace
 git stash
