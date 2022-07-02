@@ -1,6 +1,7 @@
 #!/bin/sh
 export LANG=zh_CN.UTF-8
 
+echo '**********************************START************************************************'
 cd /opt/opensource/studyspace
 git stash
 git pull -u origin master
@@ -9,4 +10,4 @@ git status
 git add .
 git commit -m "update file"
 git push -u origin master
-
+echo '***********************************END**************************************************'
