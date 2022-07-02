@@ -10,8 +10,8 @@ cd /opt/opensource/studyspace
 #git pull -u origin master
 echo `date`>>tip.txt
 git status
-#git add --all
-git add .
+git add --all
+#git add .
 git commit -m "update file"
 git push -u origin master
 git status
