@@ -8,7 +8,7 @@ echo '**********************************START***********************************
 cd /opt/opensource/studyspace
 #git stash
 #git pull -u origin master
-echo `date`>>data/tip.txt
+echo `date`>> data/tip.txt
 git status
 git add --all
 #git add .
