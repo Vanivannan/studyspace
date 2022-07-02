@@ -14,6 +14,6 @@ git add --all
 #git add .
 git commit -m "update file"
 git push -u origin master
+git pull -u origin master
 git status
-git stash
 echo '***********************************END**************************************************'
