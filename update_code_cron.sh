@@ -4,7 +4,7 @@ export LANG=zh_CN.UTF-8
 # 0,30 * * * * /bin/sh /opt/opensource/studyspace/update_code_cron.sh 2>&1 >/opt/opensource/studyspace/$(date +\%Y\%m\%d).log
 echo ''
 echo "update time: `date`"
-echo '**********************************START************************************************'
+echo '**********************************START************************************************' 1>&2
 cd /opt/opensource/studyspace
 #git stash
 #git pull -u origin master
@@ -16,4 +16,4 @@ git push -u origin master
 git stash
 git pull -u origin master
 git status
-echo '***********************************END**************************************************'
+echo '***********************************END**************************************************' 1>&2
