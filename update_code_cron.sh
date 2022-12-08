@@ -1,4 +1,5 @@
 #!/bin/sh
+set -x
 export LANG=zh_CN.UTF-8
 source_path=/opt/projects/studyspace
 
@@ -9,7 +10,7 @@ echo '**************************************************************************
 cd $source_path
 echo `date` >>tip.txt
 git add --all && git commit -m "update file"
-git push -u origin master
+git push origin master
 git stash
 git pull origin master
 git status
