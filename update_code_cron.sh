@@ -9,7 +9,7 @@ echo "update time is: `date`"
 echo '**********************************************************************************'
 cd $source_path
 echo `date` >>tip.txt
-git add --all && git commit -m "update file"
+git add . && git commit -m "update file"
 git push origin master
 git stash
 git pull origin master
