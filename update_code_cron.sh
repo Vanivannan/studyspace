@@ -11,6 +11,6 @@ echo `date` >>tip.txt
 git add --all && git commit -m "update file"
 git push -u origin master
 git stash
-git pull  origin master
+git pull origin master
 git status
 echo '**********************************************************************************'
