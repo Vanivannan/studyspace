@@ -1,0 +1,21 @@
+${SPARK_HOME}/bin/spark-submit \
+--master yarn \
+--deploy-mode client \
+--driver-memory 512m \
+--executor-memory 512m \
+--executor-cores 1 \
+--total-executor-cores 2 \
+--class org.apache.spark.examples.SparkPi \
+${SPARK_HOME}/examples/jars/spark-examples_2.12-3.0.1.jar \
+10
+
+${SPARK_HOME}/bin/spark-submit \
+--master yarn \
+--deploy-mode cluster \
+--driver-memory 512m \
+--executor-memory 512m \
+--executor-cores 1 \
+--total-executor-cores 2 \
+--class org.apache.spark.examples.SparkPi \
+${SPARK_HOME}/examples/jars/spark-examples_2.12-3.0.1.jar \
+10
