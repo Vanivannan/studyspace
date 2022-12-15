@@ -5,6 +5,7 @@ ${SPARK_HOME}/bin/spark-submit \
 --executor-memory 512m \
 --executor-cores 1 \
 --total-executor-cores 2 \
+--conf spark.ui.showConsoleProgress=true \
 --class org.apache.spark.examples.SparkPi \
 ${SPARK_HOME}/examples/jars/spark-examples_2.12-3.0.1.jar \
 10
